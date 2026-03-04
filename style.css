@@ -44,6 +44,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -57,6 +58,21 @@ header nav {
   list-style: none;
   display: flex;
   gap: 35px;
+}
+
+/* ✅ MOBILE HEADER FIX ONLY */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 0;
+    gap: 15px;
+    text-align: center;
+  }
 }
 
 .nav-links a {
@@ -187,7 +203,7 @@ section p {
    CONTACT PAGE FULL HEIGHT
 ================================= */
 #contact {
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -306,11 +322,6 @@ footer {
 
   header nav {
     padding: 15px 5%;
-  }
-
-  .nav-links {
-    gap: 18px;
-    font-size: 14px;
   }
 
   section {
