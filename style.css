@@ -1,11 +1,7 @@
-/* ===============================
-   GOOGLE FONT
-================================= */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* ===============================
-   RESET
-================================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -21,12 +17,10 @@ body {
   background: #f4f7fb;
   color: #222;
   line-height: 1.6;
-  padding-top: 80px; /* Space for fixed header */
+  padding-top: 80px; 
 }
 
-/* ===============================
-   HEADER
-================================= */
+
 header {
   position: fixed;
   top: 0;
@@ -53,18 +47,18 @@ header nav {
   letter-spacing: 1px;
 }
 
-/* ✅ HORIZONTAL MENU (DESKTOP + MOBILE) */
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 35px;
-  overflow-x: auto;      /* allow horizontal scroll */
-  white-space: nowrap;   /* keep in one line */
-  scrollbar-width: none; /* hide scrollbar Firefox */
+  overflow-x: auto;     
+  white-space: nowrap;   
+  scrollbar-width: none; 
 }
 
 .nav-links::-webkit-scrollbar {
-  display: none; /* hide scrollbar Chrome */
+  display: none; 
 }
 
 .nav-links a {
@@ -73,7 +67,7 @@ header nav {
   font-weight: 500;
   position: relative;
   transition: 0.3s;
-  flex-shrink: 0; /* prevent shrinking */
+  flex-shrink: 0;
 }
 
 .nav-links a:hover,
@@ -97,9 +91,6 @@ header nav {
   width: 100%;
 }
 
-/* ===============================
-   GENERAL SECTION
-================================= */
 section {
   padding: 100px 8% 60px;
 }
@@ -123,9 +114,7 @@ section p {
   font-size: 17px;
 }
 
-/* ===============================
-   HERO
-================================= */
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -171,9 +160,7 @@ section p {
   transform: translateY(-4px);
 }
 
-/* ===============================
-   PAGE BANNER
-================================= */
+
 .page-banner {
   min-height: 70vh;
   display: flex;
@@ -192,9 +179,7 @@ section p {
   font-size: 46px;
 }
 
-/* ===============================
-   CONTACT PAGE FULL HEIGHT
-================================= */
+
 #contact {
   min-height: 90vh;
   display: flex;
@@ -202,9 +187,7 @@ section p {
   justify-content: center;
 }
 
-/* ===============================
-   CARDS
-================================= */
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
@@ -230,9 +213,7 @@ section p {
   color: #0f3c78;
 }
 
-/* ===============================
-   IMAGES
-================================= */
+
 .about-container {
   display: flex;
   gap: 50px;
@@ -254,9 +235,7 @@ section p {
   margin-bottom: 15px;
 }
 
-/* ===============================
-   FORM
-================================= */
+
 form {
   max-width: 600px;
   margin: 30px auto 0;
@@ -291,9 +270,7 @@ section button:hover {
   transform: translateY(-3px);
 }
 
-/* ===============================
-   FOOTER
-================================= */
+
 footer {
   background: #0f3c78;
   color: white;
@@ -302,9 +279,7 @@ footer {
   font-size: 14px;
 }
 
-/* ===============================
-   RESPONSIVE
-================================= */
+
 @media (max-width: 992px) {
   .about-container {
     flex-direction: column;
